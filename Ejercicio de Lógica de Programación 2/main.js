@@ -1,7 +1,9 @@
 let celsius = parseInt(prompt("Por favor ingresa los Grados Celsius que necesitas convertir"));
 
+
 function conversionFarenheit (){
     let formulaFarenheit = (celsius * (9/5)) + 32
+    console.log(formulaFarenheit)
     return formulaFarenheit;
 }
 
