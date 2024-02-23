@@ -4,6 +4,11 @@ do {
 
     numeroFibonacci = parseInt(prompt("Ingrese un número del 1 al 10"));
 
+    while (isNaN(numeroFibonacci) || numeroFibonacci < 0 || !Number.isInteger(numeroFibacci)) {
+        numeroFibonacci = prompt("Por favor, ingrese un número entero positivo válido:");
+        numeroFibonacci = parseFloat(numero);
+    }
+
     if (!isNaN(numeroFibonacci) && numeroFibonacci>=1 && numeroFibonacci<=10){
         break;
     } else {
